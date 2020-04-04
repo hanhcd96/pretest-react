@@ -1,0 +1,139 @@
+@import "~react-toastify/dist/ReactToastify.css";
+html {
+  position: relative;
+  font-size: 87.5%;
+}
+body {
+  font-size: 1rem;
+  position: relative;
+  font-family: 'Roboto', "Segoe UI", -apple-system, BlinkMacSystemFont, "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+  "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.input-dropdown {
+  &:after {
+    content: "";
+    display: none;
+  }
+}
+.invalid-textare {
+  display: block !important;
+}
+.lds-wrap {
+  width: 100%;
+  text-align: center;
+  &.absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 4px solid #fff;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  background: #5cb85c;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 28px;
+    left: 28px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: -1px;
+    left: -1px;
+    width: 58px;
+    height: 58px;
+    opacity: 0;
+  }
+}
+@keyframes lds-cube {
+  0% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes lds-cube {
+  0% {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.lds-cube {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 40%;
+}
+.lds-cube div {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 10px;
+  left: 10px;
+  background: #337ab7;
+  -webkit-animation: lds-cube 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation: lds-cube 1s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+.lds-cube div:nth-child(2) {
+  top: 10px;
+  left: 110px;
+  background: #5bc0de;
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+.lds-cube div:nth-child(3) {
+  top: 110px;
+  left: 110px;
+  background: #f0ad4e;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.lds-cube div:nth-child(4) {
+  top: 110px;
+  left: 10px;
+  background: #5cb85c;
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+.lds-cube {
+  width: 200px !important;
+  height: 200px !important;
+  -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+  transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+}
+.clickable {
+  cursor: pointer;
+}
+.table > tbody > tr > td, .table > thead > tr > th {
+  vertical-align: middle;
+}
